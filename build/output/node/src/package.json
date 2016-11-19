@@ -1,0 +1,69 @@
+{
+  "name": "ews-javascript-api",
+  "version": "0.8.0",
+  "description": "EWS Managed api in JavaScript",
+  "main": "js/ExchangeWebService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gautamsi/ews-javascript-api.git"
+  },
+  "keywords": [
+    "ews",
+    "ews javascript api",
+    "ews-javascript-api",
+    "exchange web service"
+  ],
+  "author": "Gautam Singh (gautamsi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gautamsi/ews-javascript-api/issues"
+  },
+  "homepage": "https://github.com/gautamsi/ews-javascript-api",
+  "dependencies": {
+    "@types/moment-timezone": "^0.2.32",
+    "@types/node": "^6.0.46",
+    "@types/node-uuid": "0.0.28",
+    "@types/q": "0.0.32",
+    "base64-js": "^1.2.0",
+    "fetch": "^1.1.0",
+    "moment": "^2.15.2",
+    "moment-timezone": "^0.5.7",
+    "node-uuid": "^1.4.7",
+    "reflect-metadata": "^0.1.8",
+    "winjs-node": "^0.2.0",
+    "xmldom": "^0.1.22"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/chai-as-promised": "0.0.29",
+    "@types/gulp": "^3.8.32",
+    "@types/mocha": "^2.2.32",
+    "almond": "^0.3.3",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "debug": "^2.2.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-typedoc": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.7",
+    "mocha": "^3.1.2",
+    "node-notifier": "^4.6.1",
+    "q": "^1.4.1",
+    "r": "^0.0.5",
+    "typedoc": "^0.5.1",
+    "typescript": "^2.0.6",
+    "yargs": "^6.3.0"
+  }
+}
