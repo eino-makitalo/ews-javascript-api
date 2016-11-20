@@ -15,8 +15,6 @@ export class LegacyAvailabilityTimeZone extends ComplexProperty {
     constructor(timeZone?: any /** MomentTimezone */) {
         super();
         if (typeof timeZone !== 'undefined') {
-            this.Delta = TimeSpan.Zero;
-
             this.Delta= TimeSpan.FromHours(2)
 
             this.standardTime = new LegacyAvailabilityTimeZoneTime();
@@ -25,7 +23,7 @@ export class LegacyAvailabilityTimeZone extends ComplexProperty {
             this.standardTime.DayOfTheWeek = DayOfTheWeek.Sunday;
             this.standardTime.Month = 3;
             this.standardTime.TimeOfDay = TimeSpan.FromHours(3);
-            this.daylightTime.Year = 0;
+            this.standardTime.Year = 0;
 
             this.daylightTime = new LegacyAvailabilityTimeZoneTime();
             this.daylightTime.Delta = TimeSpan.FromHours(1);
