@@ -77,7 +77,7 @@ export class GetUserAvailabilityRequest extends SimpleServiceRequestBase {
         // Against Exchange 2010, the time zone is emitted in the request's SOAP header.
         if (writer.Service.RequestedServerVersion == ExchangeVersion.Exchange2007_SP1) {
             //todo: implement TimeZone and then LegacyAvailabilityTimeZone
-            var legacyTimeZone:LegacyAvailabilityTimeZone = new LegacyAvailabilityTimeZone(writer.Service.TimeZone);
+            var legacyTimeZone:LegacyAvailabilityTimeZone = new LegacyAvailabilityTimeZone();
 
             legacyTimeZone.WriteToXml(writer, XmlElementNames.TimeZone);
         }
