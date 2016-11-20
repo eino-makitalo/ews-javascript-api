@@ -79,7 +79,7 @@ export class LegacyAvailabilityTimeZoneTime extends ComplexProperty {
             writer.WriteElementValue(
                 XmlNamespace.Types,
                 XmlElementNames.DayOfWeek,
-                this.DayOfTheWeek);
+                DayOfTheWeek[this.DayOfTheWeek]);
         }
 
         // Only emit year if it's non zero, otherwise AS returns "Request is invalid"

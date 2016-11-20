@@ -18,21 +18,23 @@ export class LegacyAvailabilityTimeZone extends ComplexProperty {
             this.Delta = TimeSpan.Zero;
 
             this.Delta= TimeSpan.FromHours(2)
-            this.daylightTime = new LegacyAvailabilityTimeZoneTime();
-            this.daylightTime.Delta = TimeSpan.Zero;
-            this.daylightTime.DayOrder = 1;
-            this.daylightTime.DayOfTheWeek = DayOfTheWeek.Sunday;
-            this.daylightTime.Month = 10;
-            this.daylightTime.TimeOfDay = TimeSpan.FromHours(2);
-            this.daylightTime.Year = 0;
 
             this.standardTime = new LegacyAvailabilityTimeZoneTime();
-            this.standardTime.Delta = TimeSpan.FromHours(1);
-            this.standardTime.DayOrder = 1;
+            this.standardTime.Delta = TimeSpan.Zero;
+            this.standardTime.DayOrder = 5;
             this.standardTime.DayOfTheWeek = DayOfTheWeek.Sunday;
             this.standardTime.Month = 3;
-            this.standardTime.TimeOfDay = TimeSpan.FromHours(2);
+            this.standardTime.TimeOfDay = TimeSpan.FromHours(3);
             this.daylightTime.Year = 0;
+
+            this.daylightTime = new LegacyAvailabilityTimeZoneTime();
+            this.daylightTime.Delta = TimeSpan.FromHours(1);
+            this.daylightTime.DayOrder = 5;
+            this.daylightTime.DayOfTheWeek = DayOfTheWeek.Sunday;
+            this.daylightTime.Month = 10;
+            this.daylightTime.TimeOfDay = TimeSpan.FromHours(4);
+            this.daylightTime.Year = 0;
+
         }
     }
     InternalToJson(service: ExchangeService): any { throw new Error("LegacyAvailabilityTimeZone.ts - InternalToJson : Not implemented."); }
